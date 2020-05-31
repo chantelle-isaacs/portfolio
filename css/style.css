@@ -129,7 +129,7 @@ p{
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent1);
-    padding: .25em 1em;
+    padding: .25em .25em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
@@ -181,13 +181,16 @@ li.nav-item {
     display: flex;
     justify-content: center;
 }
-
+.fullintroholder{
+    display:flex;
+    flex-direction: column;
+}
 .title-holder{
     display: flex;
     position: relative;
     /* background-color:var(--clr-dark); */
-    width:80vw;
-    height:80vh;
+    width:60vw;
+    height:60vh;
     justify-content: center;
     align-items: center;
     margin-top: 1.2em;
@@ -242,10 +245,17 @@ li.nav-item {
     width: 450px;
     z-index: -2;
 }    
+.socialicons-intro{
+    display: grid;
+    
+}
 
-/* .section__subtitle--intro {
+
+.section__subtitle--intro {
     display: inline-block;
-} */
+    text-align: center;
+    color: white;
+}
 
 
 /* @media (min-width: 600px) {
@@ -315,6 +325,18 @@ li.nav-item {
     margin: 0 auto;
 }
 
+.languages{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.languageicon{
+    height: 45px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -361,6 +383,7 @@ li.nav-item {
         width: calc(100% + 2em);
         padding-left: 1em;
         padding-right: calc(200px + 4em);
+        color:white
     }
     
     .about-me__img {
@@ -405,6 +428,15 @@ li.nav-item {
     opacity: .5;
 }
 
+/* contact */
+.section__title--contact{
+    display: grid;
+    justify-content: center;
+    color: var(--clr-primary);
+    position: relative;
+}
+
+
 
 /* footer */
 
@@ -439,22 +471,31 @@ li.nav-item {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 0 0 0;
     padding: 0;
 }
 
 .social-list__item {
-    margin: 0 .5em;
+    font-size: 50px;
+    margin: 0 .2em;
 }
 
 .social-list__link {
-    padding: .5em;
+    padding: .2em;
+}
+
+.necessary-links{
+    margin-left: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    font-size: 15px;
 }
 
 
-
-
-
+.modal-content{
+    color:var(--clr-primary)
+}
 
 
 

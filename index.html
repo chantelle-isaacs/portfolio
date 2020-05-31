@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Chantelle Isaacs Portfolio Website</title>
+        <link rel="icon" href="img/webdev.png" type="image/gif" sizes="16x16">
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -50,6 +52,9 @@
                     <li class="nav-item">
                       <a class="nav-link" href="#work">Portfolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
                   </ul>
                  
                 </div>
@@ -58,17 +63,37 @@
 
         <!-- Introduction - Hi, I'm Chantelle Isaacs-->
         <section class="intro" id="home">
-            <div class="title-holder">
-                <div class="intro__img--holder">
-                    <img src="img/look at me graphic.gif" alt="graphic of woman with laptop and flashing symbols" class="intro__img">
+            <div class="fullintroholder">
+                <div class="title-holder">
+                    <div class="intro__img--holder">
+                        <img src="img/look at me graphic.gif" alt="graphic of woman with laptop and flashing symbols" class="intro__img">
+                    </div>
+                    <div class="intro__text--holder">
+                    </div>
+                    <div class="intro__hiIm--holder">
+                    </div>
                 </div>
-                <div class="intro__text--holder">
-        
+                <div class="socialicons-intro">
+                    <p class="section__subtitle section__subtitle--intro">{ full stack web developer }</p>
+                    
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="https://www.linkedin.com/in/chantellerisaacs/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="https://github.com/chantelle-isaacs">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="#contact">
+                                <i class="fas fa-envelope-square"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="intro__hiIm--holder">
-
-                </div>
-            <!-- <p class="section__subtitle section__subtitle--intro">web developer</p> -->
             </div>
         </section>
 
@@ -78,34 +103,61 @@
             <div class="services">
                 <div class="service">
                     <h3>Front-End</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
+                    <p>From building out the framework of a website in HTML, designing   with CSS and implementing functionality with JavaScript or Ruby, all structured together in a framework like React</p>
+                    <div class="languages">
                 
-                <div class="service">
-                    <h3>Back-End</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <img src="img/icon/icons8-html-5-500.png" alt="icon of html5 symbol" class="languageicon">
+                    <img src="img/icon/icons8-css3-500.png" alt="icon of css3 symbol" class="languageicon">
+                    <img src="img/icon/icons8-javascript-500.png" alt="icon of javascript symbol" class="languageicon">
+                    <img src="img/icon/icons8-react-native-500.png" alt="icon of react symbol" class="languageicon">
+                </div>
+            </div> <!-- / service -->
+            
+            <div class="service">
+                <h3>Back-End</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="languages">
+                    
+                    <img src="img/icon/icons8-ruby-programming-language-500.png" alt="icon of ruby symbol" class="languageicon">
+                        <img src="img/icon/language_ruby_on_rails_icon_136461.png" alt="icon of ruby on rails symbol" class="languageicon">
+                        <img src="img/icon/icons8-sql-500.png" alt="icon of sql symbol" class="languageicon">
+                        <img src="img/icon/icons8-postgresql-500.png" alt="icon of PostgreSQL symbol" class="languageicon">
+    
+                    </div>
                 </div> <!-- / service -->
                 
                 <div class="service">
                     <h3>Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="languages">
+                        
+                        <img src="img/icon/icons8-canva-100.png" alt="icon of canva symbol" class="languageicon">
+                        <img src="img/icon/icons8-paint-net-100.png" alt="icon of paint.net symbol" class="languageicon">
+                        <img src="img/icon/icons8-microsoft-publisher-100.png" alt="icon of Microsoft Publisher symbol" class="languageicon">
+    
+                    </div>
                 </div> <!-- / service -->
             </div> <!-- / services -->
             
-            <a href="#work" class="btn">My Work</a>
+
+            <a href="#work"><button type="button" class="btn">My Projects</button></a>
         </section>
 
         <!-- About me -->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
+            <p class="section__subtitle section__subtitle--about">I’ve always loved learning…
+            </p>
             
             <div class="about-me__body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>So it’s little surprise that I’ve ended up in an industry where the learning never ends. Before becoming a web developer, I worked for an EdTech company that focused on preparing students for standardized exams. We encouraged our students to lean into the <strong>WHY</strong> of learning, not just the how.</p>
+                <p>A move to San Diego gave me the opportunity to attend the (appropriately named) LEARN Academy where my world of learning has been expanded. Becoming a Full Stack Web Developer has allowed me to open the hood of the digital world we live in and see the engine inside - and it’s fascinating. I’d love to learn about your ideas, your projects, and how we can work together to make them a reality.</p>
             </div>
             
-            <img src="img/meonrock.jpg" alt="Jane leaning against a bus" class="about-me__img">
+            <img src="img/meonrock.jpg" alt="Chantelle sitting on a large boulder in Joshua Tree National Park" class="about-me__img">
+            <a href="#contact">
+                <button type="button" class="btn">Let's Talk</button>
+            </a>
         </section>
 
         <!-- My Portfolio of Work -->
@@ -115,7 +167,8 @@
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="#" class="portfolio__item">
+                <a data-toggle="modal" 
+                data-target="#portfolio1" class="portfolio__item">
                     <img src="img/Portfolio 1.png" alt="" class="portfolio__img">
                 </a>
                 
@@ -153,46 +206,210 @@
                 <a href="#" class="portfolio__item">
                     <img src="img/Portfolio 8.png" alt="" class="portfolio__img">
                 </a>
-            
-            </div>
+                <!-- Modal practice -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large modal
+                </button> -->
+                <!-- Modal Core - includes close and x buttons and modal title -->
+                <div class="modal fade" id="portfolio1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- Dante's code with some edits -->
+                            <div class="mh-portfolio-modal" id="mh3" style="display: inline-block;">
+                                <div class="container">
+                                    <div class="row mh-portfolio-modal-inner">
+                                        <div class="col-sm-5">
+                                            <h3>DevMatch - A Full Stack Application</h3>
+                                            <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
+                                          
+                                            <div class="mh-about-tag">
+                                                <ul>
+                                                    <li><span>Ruby on Rails</span></li>
+                                                    <li><span>React</span></li>
+                                                    <li><span>HTML</span></li>
+                                                    <li><span>CSS</span></li>
+                                                </ul>
+                                            </div>
+                                            <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <div class="mh-portfolio-modal-img">
+                                                <img src="img/Portfolio 1.png" alt="" class="img-fluid">
+                                               
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <!-- <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="mh-portfolio-modal" id="mh3" style="display: inline-block;">
+                                <div class="container">
+                                    <div class="row mh-portfolio-modal-inner"> -->
+                                        <!-- Text half of modal -->
+                                        <!-- <div class="col-sm-5"> 
+                                            <h3>DevMatch - A Full Stack Application</h3>
+                                            <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
+                                        
+                                            <div class="mh-about-tag">
+                                                <ul>
+                                                    <li><span>Ruby on Rails</span></li>
+                                                    <li><span>React</span></li>
+                                                    <li><span>HTML</span></li>
+                                                    <li><span>CSS</span></li>
+                                                </ul>
+                                            </div>
+                                            <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
+                                        </div> -->
+                                        <!-- IMAGE HALF OF MODAL -->
+                                        <!-- <div class="col-sm-7"> 
+                                            <div class="mh-portfolio-modal-img">
+                                                <img src="img/Portfolio 1.png" alt="" class="img-fluid">
+                                            
+                                                
+                                            </div>
+                                        </div>  -->
+                                    <!-- </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
         </section>
 
+        <!-- Contact me -->
+        <section class="contact-me" id="contact">
+            <h2 class="section__title section__title--contact">Contact Me</h2>
+            <form id="contact-form" method="post" action="contact.php" role="form">
 
+                <div class="messages"></div>
+            
+                <div class="controls">
+            
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Name *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- <div class="col-md-6"> -->
+                                <div class="form-group">
+                                    <label for="form_lastname">Subject *</label>
+                                    <input id="form_lastname" type="text" name="subject" class="form-control" placeholder="Please enter a subject *" required="required" data-error="Subject is required.">
+                                <div class="help-block with-errors"></div>
+                                </div>
+                            <!-- </div> -->
+
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="#contact">
+                                <button type="submit" class="btn">Send Message</button>
+                            </a>
+                            <!-- <input type="submit" class="btn btn-success btn-send" value="Send message"> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted">
+                                <strong>*</strong> These fields are required.</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </form>
+
+        </section>
       <!-- Footer -->
         <footer class="footer">
-        <!-- replace with your own email address -->
-        <a href="mailto:chantelle616@gmail.com" class="footer__link">Email Me</a>
+        
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://codepen.io">
-                    <i class="fab fa-codepen"></i>
+                <a class="social-list__link" href="https://www.linkedin.com/in/chantellerisaacs/">
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="http://dribbble.com">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com">
+                <a class="social-list__link" href="https://github.com/chantelle-isaacs">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
         </ul>
+        <div class="necessary-links">
+            <p>©2020 - Chantelle Isaacs</p>
+        </div>
+        <div class="necessary-links">
+            <a target="_blank" href="https://icons8.com/icons/set/css3">CSS3</a>,<a target="_blank" href="https://icons8.com/icons/set/html-5"> Html 5</a>, and other icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </div>
         </footer>
 
 
-    <script src="js/index.js"></script>
 
+    <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="node_modules/circletype/dist/circletype.min.js"></script>
+    
+<!-- scripts from form submission tutorial - https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
+
 
     </body>
 
