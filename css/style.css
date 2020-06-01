@@ -425,6 +425,8 @@ li.nav-item {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     opacity: .7;
+    cursor: pointer;
+
 }
 
 /* contact */
