@@ -350,7 +350,10 @@ li.nav-item {
     }
 }
 
-
+.about-me-holder{
+    display:flex;
+    flex-direction: column;
+}
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -359,6 +362,7 @@ li.nav-item {
 .about-me__img {
     box-shadow: var(--bs);
 }
+
 
 @media (min-width: 600px) {
     .about-me {
@@ -369,6 +373,7 @@ li.nav-item {
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
+        padding-bottom: 0;
     }
     
     .section__title--about {
@@ -498,13 +503,35 @@ li.nav-item {
 }
 
 
+/* Quote Carosel from bootstrapius.com */
+.pb-5{
+    padding-top: 2em;
+}
+
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
+}
 
 
 
 
+.text-success{
+    color:var(--clr-primary)!important;
+}
 
-
-
-
-
-
+.carousel-indicators li.active{
+    background: var(--clr-primary);
+}
