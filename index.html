@@ -171,13 +171,13 @@
         
         
                                 <!-- Bootstrap inner [slides]-->
-                                <div class="carousel-inner px-5 pb-4">
+                                <div class="carousel-inner px-5 pb-4" role="listbox" style=" width:100%; height: 300px">
                                     <!-- Carousel slide-->
                                     <div class="carousel-item active">
                                         <div class="media"><img class="rounded-circle img-thumbnail" src="img/SamPritchard.jpeg" alt="" width="75">
                                             <div class="media-body ml-3">
                                                 <blockquote class="blockquote border-0 p-0">
-                                                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Chantelle has a rare mix of strengths, possessing both an impressive process acumen and an ability to win over and work with very difficult people.  Operationally, she's able to see processes that need fixing that others miss.  Beyond noticing the problem, she's also able to lead the execution of those process solutions.</p>
+                                                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Chantelle has a rare mix of strengths, possessing both an impressive process acumen and an ability to win over and work with very difficult people.  Operationally, she's able to see processes that need fixing that others miss.  She's also able to lead the execution of those process solutions.</p>
                                                     <footer class="blockquote-footer">Sam Pritchard  -  
                                                         <cite title="Source Title">Varsity Tutors</cite>
                                                     </footer>
@@ -205,7 +205,7 @@
                                         <div class="media"><img class="rounded-circle img-thumbnail" src="img/TiffanyBerkebile.jpeg" alt="" width="75">
                                             <div class="media-body ml-3">
                                                 <blockquote class="blockquote border-0 p-0">
-                                                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Chantelle is great at organizing people and processes. On projects, she brings focused attention to understand what's needed, gets buy-on from key stakeholders, then executes efficiently. She rounds out this skill set by being a fun and thoughtful teammate.<br></br></p>
+                                                    <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Chantelle is great at organizing people and processes. On projects, she brings focused attention to understand what's needed, gets buy-on from key stakeholders, then executes efficiently. She rounds out this skill set by being a fun and thoughtful teammate.</p>
                                                     <footer class="blockquote-footer">Tiffany Berkebile  -  
                                                         <cite title="Source Title">Manhattan Prep</cite>
                                                     </footer>
@@ -238,12 +238,27 @@
             <h2 class="section__title">My work</h2>
             <p class="section__subtitle">A selection of my projects</p>
             
-            <div class="portfolio">
+            <!-- sorting buttons -->
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('hcj')"> HTML | CSS | JavaScript</button>
+                <button class="btn" onclick="filterSelection('react')"> React</button>
+                <button class="btn" onclick="filterSelection('ruby')">Ruby | Rails</button>
+                <button class="btn" onclick="filterSelection('design')">Design</button>
+            </div>
+            <!-- end sorting buttons -->
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
                 <!-- Portfolio item 01 -->
-                <a data-toggle="modal" data-target="#portfolio1" class="portfolio__item">
-                    <img src="img/Portfolio 1.png" alt="" class="portfolio__img">
-                </a>
-                    <!-- Start Modal Core - includes close and x buttons and modal title -->
+                <div class="column hcj">
+                <div class="content">
+                    <a data-toggle="modal" data-target="#portfolio1" class="portfolio__item hcj">
+                        <img src="img/Portfolio 1.png" alt="" style="width:100%" class="portfolio__img">
+                    </a>
+                    <h4>Mountains</h4>
+                </div>
+                </div>
+                    <!-- Start Modal Core Portfolio 1- includes close and x buttons and modal title -->
                     <div class="modal fade" id="portfolio1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
@@ -291,8 +306,6 @@
                                     <!-- END Dante's code -->
 
 
-
-
                                 </div>
                                 <!-- End Modal Body -->
 
@@ -305,12 +318,17 @@
                         </div>
                     </div>
                     <!-- End Modal Core -->
-                
+
                 <!-- Portfolio item 02 -->
-                <a data-toggle="modal" data-target="#portfolio2" class="portfolio__item">
-                    <img src="img/Portfolio 2.png" alt="" class="portfolio__img">
-                </a>
-                    <!-- Start Modal Core - includes close and x buttons and modal title -->
+                <div class="column hcj react">
+                <div class="content">
+                    <a data-toggle="modal" data-target="#portfolio2" class="portfolio__item">
+                        <img src="img/Portfolio 2.png" alt="" style="width:100%" class="portfolio__img">
+                    </a>
+                    <h4>Lights</h4>
+                </div>
+                </div>
+                    <!-- Start Modal Core Portfolio 2- includes close and x buttons and modal title -->
                     <div class="modal fade" id="portfolio2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
@@ -372,13 +390,18 @@
                         </div>
                     </div>
                     <!-- End Modal Core -->
-                
+
                 <!-- Portfolio item 03 -->
-                <a data-toggle="modal" data-target="#portfolio3" class="portfolio__item">
-                    <img src="img/Portfolio 3.png" alt="" class="portfolio__img">
-                </a>
-                     <!-- Start Modal Core - includes close and x buttons and modal title -->
-                     <div class="modal fade" id="portfolio3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="column ruby">
+                <div class="content">
+                    <a data-toggle="modal" data-target="#portfolio3" class="portfolio__item">
+                        <img src="img/Portfolio 3.png" alt="" style="width:100%" class="portfolio__img">
+                    </a>
+                    <h4>Forest</h4>
+                </div>
+                </div>
+                    <!-- Start Modal Core Portfolio item 03- includes close and x buttons and modal title -->
+                    <div class="modal fade" id="portfolio3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                                 <!-- Modal Header -->
@@ -439,13 +462,18 @@
                         </div>
                     </div>
                     <!-- End Modal Core -->
-                
+            
                 <!-- Portfolio item 04 -->
-                <a data-toggle="modal" data-target="#portfolio4" class="portfolio__item">
-                    <img src="img/Portfolio 4.png" alt="" class="portfolio__img">
-                </a>
-                     <!-- Start Modal Core - includes close and x buttons and modal title -->
-                     <div class="modal fade" id="portfolio4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="column design">
+                <div class="content design">
+                    <a data-toggle="modal" data-target="#portfolio4" class="portfolio__item">
+                        <img src="img/Portfolio 4.png" alt="" style="width:100%" class="portfolio__img">
+                    </a>
+                    <h4>Woman</h4>
+                </div>
+                </div>
+                    <!-- Start Modal Core Portfolio item 04- includes close and x buttons and modal title -->
+                    <div class="modal fade" id="portfolio4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                                 <!-- Modal Header -->
@@ -457,10 +485,10 @@
                                     </button>
                                 </div>
                                 <!-- End Modal Header -->
-
+            
                                 <!-- Start Modal Body -->
                                 <div class="modal-body">
-
+            
                                     <!-- Dante's code with some edits -->
                                     <div class="mh-portfolio-modal" style="display: inline-block;">
                                         <div class="container">
@@ -490,13 +518,13 @@
                                         </div>
                                     </div>
                                     <!-- END Dante's code -->
-
-
-
-
+            
+            
+            
+            
                                 </div>
                                 <!-- End Modal Body -->
-
+            
                                 <!-- Start Modal Footer -->
                                 <div class="modal-footer">
                                 <button type="button" class="btn" data-dismiss="modal">Close</button>
@@ -506,275 +534,7 @@
                         </div>
                     </div>
                     <!-- End Modal Core -->
-                
-                <!-- Portfolio item 05 -->
-                <a data-toggle="modal" data-target="#portfolio5" class="portfolio__item">
-                    <img src="img/Portfolio 5.png" alt="" class="portfolio__img">
-                </a>
-                     <!-- Start Modal Core - includes close and x buttons and modal title -->
-                     <div class="modal fade" id="portfolio5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl" role="document">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Portfolio 5</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <!-- End Modal Header -->
-
-                                <!-- Start Modal Body -->
-                                <div class="modal-body">
-
-                                    <!-- Dante's code with some edits -->
-                                    <div class="mh-portfolio-modal" style="display: inline-block;">
-                                        <div class="container">
-                                            <div class="row mh-portfolio-modal-inner">
-                                                <div class="col-sm-5">
-                                                    <h3>DevMatch - A Full Stack Application</h3>
-                                                    <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
-                                                
-                                                    <div class="mh-about-tag">
-                                                        <ul>
-                                                            <li><span>Ruby on Rails</span></li>
-                                                            <li><span>React</span></li>
-                                                            <li><span>HTML</span></li>
-                                                            <li><span>CSS</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
-                                                </div>
-                                                <div class="col-sm-7">
-                                                    <div class="mh-portfolio-modal-img">
-                                                        <img src="img/Portfolio 5.png" alt="" class="img-fluid">
-                                                    
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END Dante's code -->
-
-
-
-
-                                </div>
-                                <!-- End Modal Body -->
-
-                                <!-- Start Modal Footer -->
-                                <div class="modal-footer">
-                                <button type="button" class="btn" data-dismiss="modal">Close</button>
-                                </div>
-                                <!-- End Modal Footer -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Modal Core -->
-                
-                <!-- Portfolio item 06 -->
-                <a data-toggle="modal" data-target="#portfolio6" class="portfolio__item">
-                    <img src="img/Portfolio 6.png" alt="" class="portfolio__img">
-                </a>
-                    <!-- Start Modal Core - includes close and x buttons and modal title -->
-                    <div class="modal fade" id="portfolio6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl" role="document">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Portfolio 6</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <!-- End Modal Header -->
-
-                                <!-- Start Modal Body -->
-                                <div class="modal-body">
-
-                                    <!-- Dante's code with some edits -->
-                                    <div class="mh-portfolio-modal" style="display: inline-block;">
-                                        <div class="container">
-                                            <div class="row mh-portfolio-modal-inner">
-                                                <div class="col-sm-5">
-                                                    <h3>DevMatch - A Full Stack Application</h3>
-                                                    <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
-                                                
-                                                    <div class="mh-about-tag">
-                                                        <ul>
-                                                            <li><span>Ruby on Rails</span></li>
-                                                            <li><span>React</span></li>
-                                                            <li><span>HTML</span></li>
-                                                            <li><span>CSS</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
-                                                </div>
-                                                <div class="col-sm-7">
-                                                    <div class="mh-portfolio-modal-img">
-                                                        <img src="img/Portfolio 6.png" alt="" class="img-fluid">
-                                                    
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END Dante's code -->
-
-
-
-
-                                </div>
-                                <!-- End Modal Body -->
-
-                                <!-- Start Modal Footer -->
-                                <div class="modal-footer">
-                                <button type="button" class="btn" data-dismiss="modal">Close</button>
-                                </div>
-                                <!-- End Modal Footer -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Modal Core -->
-                
-                <!-- Portfolio item 07 -->
-                <a data-toggle="modal" data-target="#portfolio7" class="portfolio__item">
-                    <img src="img/Portfolio 7.png" alt="" class="portfolio__img">
-                </a>
-                    <!-- Start Modal Core - includes close and x buttons and modal title -->
-                    <div class="modal fade" id="portfolio7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl" role="document">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Portfolio 7</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <!-- End Modal Header -->
-
-                                <!-- Start Modal Body -->
-                                <div class="modal-body">
-
-                                    <!-- Dante's code with some edits -->
-                                    <div class="mh-portfolio-modal" style="display: inline-block;">
-                                        <div class="container">
-                                            <div class="row mh-portfolio-modal-inner">
-                                                <div class="col-sm-5">
-                                                    <h3>DevMatch - A Full Stack Application</h3>
-                                                    <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
-                                                
-                                                    <div class="mh-about-tag">
-                                                        <ul>
-                                                            <li><span>Ruby on Rails</span></li>
-                                                            <li><span>React</span></li>
-                                                            <li><span>HTML</span></li>
-                                                            <li><span>CSS</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
-                                                </div>
-                                                <div class="col-sm-7">
-                                                    <div class="mh-portfolio-modal-img">
-                                                        <img src="img/Portfolio 7.png" alt="" class="img-fluid">
-                                                    
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END Dante's code -->
-
-
-
-
-                                </div>
-                                <!-- End Modal Body -->
-
-                                <!-- Start Modal Footer -->
-                                <div class="modal-footer">
-                                <button type="button" class="btn" data-dismiss="modal">Close</button>
-                                </div>
-                                <!-- End Modal Footer -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Modal Core -->
-                
-                <!-- Portfolio item 08 -->
-                <a data-toggle="modal" data-target="#portfolio8" class="portfolio__item">
-                    <img src="img/Portfolio 8.png" alt="" class="portfolio__img">
-                </a>
-                    <!-- Start Modal Core - includes close and x buttons and modal title -->
-                    <div class="modal fade" id="portfolio8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl" role="document">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Portfolio 8</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <!-- End Modal Header -->
-
-                                <!-- Start Modal Body -->
-                                <div class="modal-body">
-
-                                    <!-- Dante's code with some edits -->
-                                    <div class="mh-portfolio-modal" style="display: inline-block;">
-                                        <div class="container">
-                                            <div class="row mh-portfolio-modal-inner">
-                                                <div class="col-sm-5">
-                                                    <h3>DevMatch - A Full Stack Application</h3>
-                                                    <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
-                                                
-                                                    <div class="mh-about-tag">
-                                                        <ul>
-                                                            <li><span>Ruby on Rails</span></li>
-                                                            <li><span>React</span></li>
-                                                            <li><span>HTML</span></li>
-                                                            <li><span>CSS</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
-                                                </div>
-                                                <div class="col-sm-7">
-                                                    <div class="mh-portfolio-modal-img">
-                                                        <img src="img/Portfolio 8.png" alt="" class="img-fluid">
-                                                    
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END Dante's code -->
-
-
-
-
-                                </div>
-                                <!-- End Modal Body -->
-
-                                <!-- Start Modal Footer -->
-                                <div class="modal-footer">
-                                <button type="button" class="btn" data-dismiss="modal">Close</button>
-                                </div>
-                                <!-- End Modal Footer -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Modal Core -->
-
+            <!-- END GRID -->
             </div>
         </section>
 

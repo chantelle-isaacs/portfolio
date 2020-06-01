@@ -416,11 +416,6 @@ li.nav-item {
     overflow: hidden;
 }
 
-.portfolio__img {
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
-}
 
 .portfolio__item:focus {
     position: relative;
@@ -429,8 +424,7 @@ li.nav-item {
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
+    opacity: .7;
 }
 
 /* contact */
@@ -521,9 +515,7 @@ li.nav-item {
     background: #ccc;
 }
 
-.carousel-indicators li.active {
-    background: #28a745;
-}
+
 
 
 
@@ -535,3 +527,53 @@ li.nav-item {
 .carousel-indicators li.active{
     background: var(--clr-primary);
 }
+
+
+/* sortable portfolio css */
+.row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+    color:var(--clr-primary)
+    }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color:var(--clr-accent1);
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color:var(--clr-accent3);
+     color: white;
+  }
