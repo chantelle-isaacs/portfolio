@@ -30,14 +30,7 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
-}
+
 
 /* General styles */
 
@@ -75,6 +68,7 @@ strong { font-weight: var(--fw-bold) }
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
+    margin: .5em;
     background: var(--clr-accent2);
     color: var(--clr-dark);
     text-decoration: none;
@@ -86,6 +80,10 @@ strong { font-weight: var(--fw-bold) }
     transition: transform 200ms ease-in-out;
 }
 
+.btn-fill{
+    align-items: flex-end;
+}
+
 .btn:hover {
     transform: scale(1.1);
 }
@@ -93,10 +91,13 @@ strong { font-weight: var(--fw-bold) }
 /* Typography */
 
 h1,
-h2,
-h3 {
+h2 {
     line-height: 1;
     margin: 0;
+}
+
+h3{
+    margin: .25em;
 }
 
 h1 { font-size: var(--fs-h1) }
@@ -145,7 +146,7 @@ p{
 header {
     display: flex;
     justify-content: space-between;
-    padding: .2em;
+    padding: .1em;
     position:fixed;
     background-color: white;
     z-index: 999;
@@ -180,16 +181,26 @@ li.nav-item {
     height:100vh;
     display: flex;
     justify-content: center;
+    margin-top: auto;
 }
 .fullintroholder{
     display:flex;
     flex-direction: column;
+    justify-content: center;
 }
 .title-holder{
     display: flex;
     position: relative;
-    /* background-color:var(--clr-dark); */
     width:60vw;
+    height:60vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2em;
+}
+
+.title-holder-mobile{
+    display: flex;
+    flex-direction: column;
     height:60vh;
     justify-content: center;
     align-items: center;
@@ -202,6 +213,23 @@ li.nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.intro__img--holder-mobile{
+    display: flex;
+    justify-content: center;
+    height:255px;
+    width:255px;
+}
+.intro__img-mobile{
+    height: 250px;
+    width:250px;
+
+}
+.mobile-intro-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.5em;
 }
 
 .intro__text--holder{
@@ -337,18 +365,7 @@ li.nav-item {
     filter: invert(1);
 }
 
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .service + .service {
-        margin-left: 2em;
-    }
-}
+
 
 .about-me-holder{
     display:flex;
@@ -364,46 +381,26 @@ li.nav-item {
 }
 
 
-@media (min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-        padding-bottom: 0;
-    }
-    
-    .section__title--about {
-        grid-area: title;
-    }
-    
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-        color:white
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
-}
 
 /* My Work */
 
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.space-on-sides{
+    width: 66vw;
+    margin:auto;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: flex-start;
 }
 
 .portfolio {
@@ -426,7 +423,46 @@ li.nav-item {
 .portfolio__item:focus .portfolio__img {
     opacity: .7;
     cursor: pointer;
+}
 
+.card-title{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+
+ul li {
+    margin: 0px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 0px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: thin;
+}
+
+.badge {
+    padding: 0.5em 0.5em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.4rem;
+    background-color: var(--clr-accent1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: var(--clr-light)
 }
 
 /* contact */
@@ -447,7 +483,7 @@ li.nav-item {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
+    
 }
 
 .footer a { 
@@ -497,7 +533,19 @@ li.nav-item {
 .modal-content{
     color:var(--clr-primary)
 }
+.modal-body{
+    padding:0
+}
 
+.modal-header {
+    padding: .25rem 1rem;
+    border-bottom: 0px solid #fff;
+}
+
+.modal-footer {
+    border-top: 0px solid #fff;
+    padding: 0.25rem;
+}
 
 /* Quote Carosel from bootstrapius.com */
 .pb-5{
@@ -534,48 +582,109 @@ li.nav-item {
 /* sortable portfolio css */
 .row {
     margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
     padding: 8px;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
     float: left;
     width: 33.33%;
     display: none; /* Hide columns by default */
     color:var(--clr-primary)
-    }
-  
-  /* Clear floats after rows */
-  .row:after {
+}
+
+/* Clear floats after rows */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Content */
-  .content {
+}
+
+/* Content */
+.content {
     background-color: white;
     padding: 10px;
-  }
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
+
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
     display: block;
-  }
-  
-  
-  /* Add a grey background color on mouse-over */
-  .btn:hover {
+}
+
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
     background-color:var(--clr-accent1);
-  }
-  
-  /* Add a dark background color to the active button */
-  .btn.active {
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
     background-color:var(--clr-accent3);
-     color: white;
-  }
+    color: white;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+    
+}
+
+@media (min-width: 600px) {
+    
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+        padding-bottom: 0;
+    }
+    
+    .section__title--about {
+        grid-area: title;
+    }
+    
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+        color:white
+    }
+    
+    .about-me__img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .service + .service {
+        margin-left: 2em;
+    }
+    
+}

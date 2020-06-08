@@ -57,15 +57,29 @@
         <!-- Introduction - Hi, I'm Chantelle Isaacs-->
         <section class="intro" id="home">
             <div class="fullintroholder">
-                <div class="title-holder">
+                <!-- Full Size intro -->
+                <div class="title-holder d-none d-md-flex">
                     <div class="intro__img--holder">
-                        <img src="img/look at me graphic.gif" alt="graphic of woman with laptop and flashing symbols" class="intro__img">
+                        <img src="img/megraphic.gif" alt="graphic of woman with laptop and flashing symbols" class="intro__img">
                     </div>
                     <div class="intro__text--holder">
                     </div>
-                    <div class="intro__hiIm--holder">
+                    <div class="intro__hiIm--holder ">
                     </div>
                 </div>
+                <!-- Mobile Size Intro -->
+                <div class="title-holder-mobile d-md-none">
+                    <div class="intro__img--holder-mobile">
+                        <img src="img/megraphic.gif" alt="graphic of woman with laptop and flashing symbols" class="intro__img-mobile">
+                    </div>
+                    <div class="mobile-intro-hiIm">
+                        <h3>Hi, I'm</h3>
+                    </div>
+                    <div class="mobile-intro-text">
+                        <h1>Chantelle Isaacs</h1>
+                    </div>
+                </div>
+
                 <div class="socialicons-intro">
                     <p class="section__subtitle section__subtitle--intro">{ full stack web developer }</p>
                     
@@ -155,7 +169,7 @@
         </section>
             
         <!-- Quote Carousel from bootstrapious.com -->
-        <section class="pb-5">
+        <section class="pb-5 d-none d-md-flex">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-xl-8 mx-auto">
@@ -236,7 +250,6 @@
         <!-- My Portfolio of Work -->
         <section class="my-work" id="work">
             <h2 class="section__title">My work</h2>
-            <p class="section__subtitle">A selection of my projects</p>
             
             <!-- sorting buttons -->
             <div id="myBtnContainer">
@@ -248,24 +261,23 @@
             </div>
             <!-- end sorting buttons -->
             <!-- Portfolio Gallery Grid -->
+            <div class="space-on-sides">
             <div class="row">
-                <!-- Portfolio item 01 -->
-                <div class="column hcj">
-                <div class="content">
-                    <a data-toggle="modal" data-target="#portfolio1" class="portfolio__item hcj">
-                        <img src="img/Portfolio 1.png" alt="" style="width:100%" class="portfolio__img">
+                <!-- Portfolio item 01 CAPSTONE -->
+                <div class="column hcj react ruby design">
+                    <a data-toggle="modal" data-target="#capstone" class="portfolio__item hcj">
+                        <div class="content">
+                            <img src="img/Portfolio capstone.png" alt="" style="width:100%" class="portfolio__img">
+                            <p class="card-title">Capstone Project</p>
+                        </div>
                     </a>
-                    <h4>Mountains</h4>
-                </div>
                 </div>
                     <!-- Start Modal Core Portfolio 1- includes close and x buttons and modal title -->
-                    <div class="modal fade" id="portfolio1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="capstone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Portfolio 1</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -274,28 +286,27 @@
 
                                 <!-- Start Modal Body -->
                                 <div class="modal-body">
-
-                                    <!-- Dante's code with some edits -->
                                     <div class="mh-portfolio-modal" id="mh3" style="display: inline-block;">
                                         <div class="container">
                                             <div class="row mh-portfolio-modal-inner">
                                                 <div class="col-sm-5">
-                                                    <h3>DevMatch - A Full Stack Application</h3>
-                                                    <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
-                                                
+                                                    <h3>Capstone Project</h3>
+                                                        <p>This is a placeholder for my capstone project, since it will use ALL the skills </p>                                               
                                                     <div class="mh-about-tag">
                                                         <ul>
-                                                            <li><span>Ruby on Rails</span></li>
-                                                            <li><span>React</span></li>
-                                                            <li><span>HTML</span></li>
-                                                            <li><span>CSS</span></li>
+                                                            <li><span class="badge badge-light">Ruby on Rails</span></li>
+                                                            <li><span class="badge badge-light">React</span></li>
+                                                            <li><span class="badge badge-light">HTML</span></li>
+                                                            <li><span class="badge badge-light">CSS</span></li>
+                                                            <li><span class="badge badge-light">JavaScript</span></li>
+                                                            <li><span class="badge badge-light">Design</span></li>
                                                         </ul>
                                                     </div>
-                                                    <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
+                                                    <a href="https://github.com/chantelle-isaacs" target="_blank" class="btn btn-fill">Link to my GitHub</a>
                                                 </div>
                                                 <div class="col-sm-7">
                                                     <div class="mh-portfolio-modal-img">
-                                                        <img src="img/Portfolio 1.png" alt="" class="img-fluid">
+                                                        <img src="img/Portfolio capstone.png" alt="" class="img-fluid">
                                                     
                                                         
                                                     </div>
@@ -303,9 +314,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- END Dante's code -->
-
-
                                 </div>
                                 <!-- End Modal Body -->
 
@@ -318,24 +326,23 @@
                         </div>
                     </div>
                     <!-- End Modal Core -->
+                <!-- END Portfolio item 1 -->
 
-                <!-- Portfolio item 02 -->
-                <div class="column hcj react">
-                <div class="content">
-                    <a data-toggle="modal" data-target="#portfolio2" class="portfolio__item">
-                        <img src="img/Portfolio 2.png" alt="" style="width:100%" class="portfolio__img">
+                <!-- Portfolio item 02 BATTLESHIP-->
+                <div class="column hcj react design">
+                    <a data-toggle="modal" data-target="#battleship" class="portfolio__item hcj">
+                    <div class="content">
+                            <img src="img/Portfolio battleship.png" alt="" style="width:100%" class="portfolio__img">
+                            <p class="card-title">Battleship</p>
+                        </div>
                     </a>
-                    <h4>Lights</h4>
-                </div>
                 </div>
                     <!-- Start Modal Core Portfolio 2- includes close and x buttons and modal title -->
-                    <div class="modal fade" id="portfolio2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="battleship" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Portfolio 2</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -344,28 +351,25 @@
 
                                 <!-- Start Modal Body -->
                                 <div class="modal-body">
-
-                                    <!-- Dante's code with some edits -->
-                                    <div class="mh-portfolio-modal" style="display: inline-block;">
+                                    <div class="mh-portfolio-modal" id="mh3" style="display: inline-block;">
                                         <div class="container">
                                             <div class="row mh-portfolio-modal-inner">
                                                 <div class="col-sm-5">
-                                                    <h3>DevMatch - A Full Stack Application</h3>
-                                                    <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
-                                                
+                                                    <h3>Battleship</h3>
+                                                        <p>This was built during my time at LEARN Academy as part of a group project with <a href="https://github.com/thomasgonda3">Thomas Gonda</a>. We utilized multiple React components to create the gameboard and extensive logic to prevent ship overlap or line-breaking.</p>                                               
                                                     <div class="mh-about-tag">
                                                         <ul>
-                                                            <li><span>Ruby on Rails</span></li>
-                                                            <li><span>React</span></li>
-                                                            <li><span>HTML</span></li>
-                                                            <li><span>CSS</span></li>
+                                                            <li><span class="badge badge-light">React</span></li>
+                                                            <li><span class="badge badge-light">HTML</span></li>
+                                                            <li><span class="badge badge-light">CSS</span></li>
+                                                            <li><span class="badge badge-light">JavaScript</span></li>
                                                         </ul>
                                                     </div>
-                                                    <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
+                                                    <a href="https://github.com/chantelle-isaacs/battleship-chan-tom" target="_blank" class="btn btn-fill">Link to GitHub Repo</a>
                                                 </div>
                                                 <div class="col-sm-7">
                                                     <div class="mh-portfolio-modal-img">
-                                                        <img src="img/Portfolio 2.png" alt="" class="img-fluid">
+                                                        <img src="img/Portfolio battleship.png" alt="" class="img-fluid">
                                                     
                                                         
                                                     </div>
@@ -373,11 +377,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- END Dante's code -->
-
-
-
-
                                 </div>
                                 <!-- End Modal Body -->
 
@@ -390,24 +389,23 @@
                         </div>
                     </div>
                     <!-- End Modal Core -->
+                <!-- END Battleship  -->
 
-                <!-- Portfolio item 03 -->
+                <!-- Portfolio item 03 CANNIBAL ISLAND-->
                 <div class="column ruby">
-                <div class="content">
-                    <a data-toggle="modal" data-target="#portfolio3" class="portfolio__item">
-                        <img src="img/Portfolio 3.png" alt="" style="width:100%" class="portfolio__img">
+                    <a data-toggle="modal" data-target="#cannibal" class="portfolio__item hcj">
+                    <div class="content">
+                            <img src="img/Portfolio cannibal island.png" alt="" style="width:100%" class="portfolio__img">
+                            <p class="card-title">Escape from Cannibal Island</p>
+                        </div>
                     </a>
-                    <h4>Forest</h4>
                 </div>
-                </div>
-                    <!-- Start Modal Core Portfolio item 03- includes close and x buttons and modal title -->
-                    <div class="modal fade" id="portfolio3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- Start Modal Core Portfolio 3- includes close and x buttons and modal title -->
+                    <div class="modal fade" id="cannibal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Portfolio 3</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -416,28 +414,22 @@
 
                                 <!-- Start Modal Body -->
                                 <div class="modal-body">
-
-                                    <!-- Dante's code with some edits -->
-                                    <div class="mh-portfolio-modal" style="display: inline-block;">
+                                    <div class="mh-portfolio-modal" id="mh3" style="display: inline-block;">
                                         <div class="container">
                                             <div class="row mh-portfolio-modal-inner">
                                                 <div class="col-sm-5">
-                                                    <h3>DevMatch - A Full Stack Application</h3>
-                                                    <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
-                                                
+                                                    <h3>Escape from Cannibal Island</h3>
+                                                        <p>This was built during my time at LEARN Academy as part of a group project with <a href="https://github.com/jazmynCortez">Jazmyn Cortez</a> and <a href="https://github.com/aprilrieger">April Rieger</a>. The goal was to complete a text-based game to be played in a terminal. We used this project to practice core skills in Ruby with emphasis on Classes, Objects, and Inheritance. </p>                                               
                                                     <div class="mh-about-tag">
                                                         <ul>
-                                                            <li><span>Ruby on Rails</span></li>
-                                                            <li><span>React</span></li>
-                                                            <li><span>HTML</span></li>
-                                                            <li><span>CSS</span></li>
+                                                            <li><span class="badge badge-light">Ruby</span></li>
                                                         </ul>
                                                     </div>
-                                                    <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
+                                                    <a href="https://github.com/chantelle-isaacs/text-based-game-challenge-april-jazmyn-chantelle" target="_blank" class="btn btn-fill">Link to GitHub Repo</a>
                                                 </div>
                                                 <div class="col-sm-7">
                                                     <div class="mh-portfolio-modal-img">
-                                                        <img src="img/Portfolio 3.png" alt="" class="img-fluid">
+                                                        <img src="img/Portfolio cannibal island.png" alt="" class="img-fluid">
                                                     
                                                         
                                                     </div>
@@ -445,11 +437,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- END Dante's code -->
-
-
-
-
                                 </div>
                                 <!-- End Modal Body -->
 
@@ -462,54 +449,50 @@
                         </div>
                     </div>
                     <!-- End Modal Core -->
+                <!-- END Cannibal Island -->
             
-                <!-- Portfolio item 04 -->
-                <div class="column design">
-                <div class="content design">
-                    <a data-toggle="modal" data-target="#portfolio4" class="portfolio__item">
-                        <img src="img/Portfolio 4.png" alt="" style="width:100%" class="portfolio__img">
+                <!-- Portfolio item 04 Tic Tac Toe-->
+                <div class="column hcj react design">
+                    <a data-toggle="modal" data-target="#tictactoe" class="portfolio__item hcj">
+                    <div class="content">
+                            <img src="img/Portfolio tictactoe.png" alt="" style="width:100%" class="portfolio__img">
+                            <p class="card-title">Tic Tac Toe</p>
+                        </div>
                     </a>
-                    <h4>Woman</h4>
                 </div>
-                </div>
-                    <!-- Start Modal Core Portfolio item 04- includes close and x buttons and modal title -->
-                    <div class="modal fade" id="portfolio4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- Start Modal Core Tic Tac Toe- includes close and x buttons and modal title -->
+                    <div class="modal fade" id="tictactoe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl" role="document">
                             <div class="modal-content">
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Portfolio 4</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <!-- End Modal Header -->
-            
+
                                 <!-- Start Modal Body -->
                                 <div class="modal-body">
-            
-                                    <!-- Dante's code with some edits -->
-                                    <div class="mh-portfolio-modal" style="display: inline-block;">
+                                    <div class="mh-portfolio-modal" id="mh3" style="display: inline-block;">
                                         <div class="container">
                                             <div class="row mh-portfolio-modal-inner">
                                                 <div class="col-sm-5">
-                                                    <h3>DevMatch - A Full Stack Application</h3>
-                                                    <p>DevMatch is an app designed to connect current and aspiring software engineers seeking to improve their skills in a certain area with mentors who have real-world experience and are willing to share their knowledge. By allowing users to post their availability and seek out mentors by skill set, DevMatch is aiming to make the way we learn and teach a more open and communal experience.</p>       
-                                                
+                                                    <h3>Tic Tac Toe</h3>
+                                                        <p>This was built during my time at LEARN Academy as part of a group project with <a href="https://github.com/thomasgonda3">Thomas Gonda</a>. We utilized multiple React components to control the grid, and logical functions to control the alternating turns and winning scenarios. </p>                                               
                                                     <div class="mh-about-tag">
                                                         <ul>
-                                                            <li><span>Ruby on Rails</span></li>
-                                                            <li><span>React</span></li>
-                                                            <li><span>HTML</span></li>
-                                                            <li><span>CSS</span></li>
+                                                            <li><span class="badge badge-light">React</span></li>
+                                                            <li><span class="badge badge-light">HTML</span></li>
+                                                            <li><span class="badge badge-light">CSS</span></li>
+                                                            <li><span class="badge badge-light">JavaScript</span></li>
                                                         </ul>
                                                     </div>
-                                                    <a href="https://limitless-depths-51712.herokuapp.com/" target="_blank" class="btn btn-fill">Live View</a>
+                                                    <a href="https://github.com/chantelle-isaacs/tictactoe" target="_blank" class="btn btn-fill">Link to GitHub Repo</a>
                                                 </div>
                                                 <div class="col-sm-7">
                                                     <div class="mh-portfolio-modal-img">
-                                                        <img src="img/Portfolio 4.png" alt="" class="img-fluid">
+                                                        <img src="img/Portfolio tictactoe.png" alt="" class="img-fluid">
                                                     
                                                         
                                                     </div>
@@ -517,14 +500,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- END Dante's code -->
-            
-            
-            
-            
                                 </div>
                                 <!-- End Modal Body -->
-            
+
                                 <!-- Start Modal Footer -->
                                 <div class="modal-footer">
                                 <button type="button" class="btn" data-dismiss="modal">Close</button>
@@ -534,7 +512,72 @@
                         </div>
                     </div>
                     <!-- End Modal Core -->
+                <!-- END Tic Tac Toe -->
+                <!-- Portfolio item Robots-->
+                <div class="column hcj react design">
+                    <a data-toggle="modal" data-target="#robots" class="portfolio__item hcj">
+                    <div class="content">
+                            <img src="img/Portfolio robots.png" alt="" style="width:100%" class="portfolio__img">
+                            <p class="card-title">Robot Say, Robot Do</p>
+                        </div>
+                    </a>
+                </div>
+                    <!-- Start Modal Core Portfolio 2- includes close and x buttons and modal title -->
+                    <div class="modal fade" id="robots" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl" role="document">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- End Modal Header -->
+
+                                <!-- Start Modal Body -->
+                                <div class="modal-body">
+                                    <div class="mh-portfolio-modal" id="mh3" style="display: inline-block;">
+                                        <div class="container">
+                                            <div class="row mh-portfolio-modal-inner">
+                                                <div class="col-sm-5">
+                                                    <h3>Robot Say, Robot Do</h3>
+                                                        <p>This was built during my time at LEARN Academy as part of a group project with <a href="https://github.com/masanes">Aaron Masanes</a>. We utilized multiple React components to create the individual robots and their responses to the text input by the user. I used Paint.NET to edit the robot images and add them to the CSS.</p>                                               
+                                                    <div class="mh-about-tag">
+                                                        <ul>
+                                                            <li><span class="badge badge-light">React</span></li>
+                                                            <li><span class="badge badge-light">HTML</span></li>
+                                                            <li><span class="badge badge-light">CSS</span></li>
+                                                            <li><span class="badge badge-light">JavaScript</span></li>
+                                                            <li><span class="badge badge-light">Paint.NET</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="https://github.com/chantelle-isaacs/react/tree/master/robots-aaron-chantelle" target="_blank" class="btn btn-fill">Link to GitHub File</a>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class="mh-portfolio-modal-img">
+                                                        <img src="img/Portfolio robots.png" alt="" class="img-fluid">
+                                                    
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Modal Body -->
+
+                                <!-- Start Modal Footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
+                                <!-- End Modal Footer -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal Core -->
+                <!-- END Robots  -->
             <!-- END GRID -->
+            </div>
             </div>
         </section>
 
