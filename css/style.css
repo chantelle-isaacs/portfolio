@@ -472,6 +472,9 @@ ul li {
     color: var(--clr-primary);
     position: relative;
 }
+.contact-info{
+    text-align: center !important;
+}
 
 
 
