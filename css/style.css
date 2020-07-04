@@ -394,7 +394,7 @@ li.nav-item {
     min-height: 100vh;
 
 }
-.space-on-sides{
+.portfolio-holder{
     width: 66vw;
     margin:auto;
     display: flex;
